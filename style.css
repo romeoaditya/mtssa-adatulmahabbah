@@ -1,0 +1,790 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --orange: #ffac14;
+  --pink: #2c4e80;
+  --black: #222831;
+  --white: #fff;
+  --light-color: #4d4d4d;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3rem 7%;
+}
+
+.heading {
+  font-size: 4rem;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heading span {
+  color: var(--orange);
+  text-transform: uppercase;
+}
+
+.btn {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--orange);
+  color: var(--orange);
+  background: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--orange);
+  color: var(--white);
+}
+/* Pop Up */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: none;
+  overflow: hidden;
+}
+
+.popup-content {
+  position: relative;
+  text-align: center;
+  max-width: 32%;
+  max-height: 32%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.popup-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.popup-dismiss {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 50px;
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+.header .navbar a:hover,
+.header .icons div:hover {
+  color: var(--orange);
+}
+
+.header .icons div {
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+#menu-btn {
+  display: none;
+}
+
+/* header ends */
+
+/* home */
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  position: relative;
+  background-image: url("/images/mahabah-img/background/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home .content {
+  flex: 1 1 40rem;
+  padding-top: 6.5rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.home .content h3 {
+  text-align: center;
+  font-size: 6rem;
+  color: var(--white);
+}
+
+.home .content h3 span {
+  text-align: center;
+  color: var(--orange);
+}
+
+.home .content p {
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--white);
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.custom-shape-divider-bottom-1684324473 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1684324473 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 107px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1684324473 .shape-fill {
+  fill: var(--pink);
+}
+
+/* end */
+
+/* about us */
+
+.about {
+  background: var(--pink);
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about .row .image {
+  flex: 1 1 50rem;
+}
+
+.about .row .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 40rem;
+}
+
+.about .row .content h3 {
+  font-size: 3.5rem;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.about .row .content p {
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+/* end */
+
+/* education */
+
+.education .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.education .box-container .box {
+  background: var(--white);
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1rem;
+  overflow: hidden;
+}
+
+.education .box-container .box:hover img {
+  transform: scale(1.1);
+}
+
+.education .box-container .box:nth-child(odd) {
+  background: var(--pink);
+}
+
+.education .box-container .box:nth-child(2) {
+  background: var(--orange);
+}
+
+.education .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--white);
+  line-height: 1.8;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+
+.education .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--white);
+  padding: 1rem 2rem;
+  z-index: 1;
+}
+
+.education .box-container .box img {
+  width: 100%;
+  height: 75%;
+}
+
+/* end */
+
+/* teacher */
+
+.teacher {
+  background: url(images/teacher-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.teacher .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.teacher .box-container .box {
+  background: var(--white);
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 2rem;
+}
+
+.teacher .box-container .box img {
+  height: 30rem;
+}
+
+.teacher .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.teacher .box-container .box p {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  margin-bottom: 1rem;
+}
+
+.teacher .box-container .box .share i {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  background: none;
+  color: var(--pink);
+  border: 0.1rem solid var(--pink);
+  margin-left: 0.5rem;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.teacher .box-container .box .share i:hover {
+  color: var(--white);
+  border: 0.1rem solid var(--orange);
+  background: var(--orange);
+}
+
+/* end */
+
+/* activities */
+
+.activities .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.activities .box-container .box {
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 2rem;
+  outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1rem;
+}
+
+.activities .box-container .box img {
+  height: 10rem;
+}
+
+.activities .box-container .box:hover img {
+  transform: scale(1.1);
+}
+
+.activities .box-container .box h3 {
+  font-size: 2.2rem;
+  padding: 2rem 0;
+  color: var(--black);
+}
+
+/* end */
+
+/* gallery */
+
+.gallery {
+  background: url(images/gallery-bg.png) no-repeat;
+  background-size: cover;
+}
+
+.gallery .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.gallery .gallery-container .box {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery .gallery-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery .gallery-container .box:hover img {
+  transform: scale(1.2);
+}
+
+.gallery .gallery-container .box .icon {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.gallery .gallery-container .box .icon i {
+  font-size: 6rem;
+  color: var(--white);
+}
+
+.gallery .gallery-container .box:hover .icon {
+  display: flex;
+}
+
+/* end */
+
+/* contact */
+
+.contact .icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.contact .icons-container .icons {
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 2rem;
+  text-align: center;
+  outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1rem;
+}
+
+.contact .icons-container .icons i {
+  font-size: 2.5rem;
+  height: 6rem;
+  width: 6rem;
+  color: var(--white);
+  line-height: 6rem;
+  border-radius: 50%;
+  background: var(--orange);
+}
+
+.contact .icons-container .icons h3 {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  color: var(--black);
+}
+
+.contact .icons-container .icons p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: var(--light-color);
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.contact .row .image {
+  flex: 1 1 20rem;
+}
+
+.contact .row .image img {
+  width: 100%;
+}
+
+.contact .row form {
+  flex: 1 1 50rem;
+  padding: 2rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.4);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+}
+
+.contact .row form h3 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  color: var(--black);
+}
+
+.contact .row form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .row form .inputBox input {
+  width: 49%;
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea {
+  font-size: 1.6rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  padding: 1rem 1.2rem;
+  color: var(--black);
+  margin: 0.7rem 0;
+}
+
+.contact .row form .inputBox input:focus,
+.contact .row form textarea:focus {
+  border: 0.1rem solid var(--orange);
+}
+
+.contact .row form textarea {
+  height: 15rem;
+  width: 100%;
+  resize: none;
+}
+
+/* end */
+
+/* footer */
+
+.footer {
+  background: var(--pink);
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: var(--orange);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover {
+  color: var(--orange);
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--orange);
+}
+
+.footer .credit {
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  text-transform: none;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.footer .credit span {
+  text-transform: none;
+  color: var(--orange);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); /* Contoh bayangan: horizontal-offset vertical-offset blur-radius color */
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: var(--orange);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.back-to-top.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.back-to-top.fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.back-to-top:hover {
+  background-color: var(--orange);
+  opacity: 90%;
+}
+
+.back-to-top:active {
+  background-color: var(--orange);
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.whatsapp-btn {
+  position: fixed;
+  font-size: 30px;
+  background-color: #25d366;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #ffff;
+  text-align: center;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 80px;
+  z-index: 1000;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: bounce 1s infinite;
+}
+
+/* end */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* media query */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem 3rem;
+  }
+
+  section {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 827px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .popup-content {
+    position: relative;
+    text-align: center;
+    max-width: 65%;
+    max-height: 65%;
+    margin: auto;
+    margin-top: 65px;
+  }
+
+  .header .logo img {
+    display: none;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    background: var(--white);
+  }
+
+  .header .navbar.active {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+  .home {
+    background-image: url("images/mahabah-img/background/2.png");
+  }
+
+  .home .content {
+    padding-top: 3rem;
+  }
+
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+  .whatsapp-btn {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .popup-content {
+    position: relative;
+    text-align: center;
+    max-width: 70%;
+    max-height: 70%;
+    margin: auto;
+    margin-top: 60px;
+  }
+  .home .content h3 {
+    font-size: 3.5rem;
+  }
+}
